@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%; 
+    padding: 1rem 8rem; 
+    font-weight: 600;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+/* Define the animation keyframes */
+@keyframes background-color-animation {
+    0% { background-color: #121212; }
+    20% { background-color: rgba(131, 58, 180, 1); }
+    40% { background-color: rgba(253, 29, 29, 1); }
+    60% { background-color: rgba(252, 176, 69, 1); }
+    80% { background-color: rgba(131, 58, 180, 1); }
+    100% { background-color: #121212; }
+}
+  
+/* Apply the animation to the logo on hover */
+.logo:hover {
+    animation-name: background-color-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.navcenter{
+    position: absolute; 
+    left: 50%; /* move the element to the center horizontally */
+    transform: translateX(-50%); /* center the element horizontally using translateX */
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    font-size:large;
+}
+
+nav ul li a{
+    color: black;
+}
+
+/* underline hover effect */
+.underline {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+  }
+  
+.underline::before {
+    content: "";
+    position: absolute;
+    bottom: -3px; /* places the underline at the bottom of the text */
+    left: 0; /* positions the underline at the left edge of the element */
+    width: 0%; /* sets the initial width of the underline to zero */
+    height: 2px;
+    background-color: #000;
+    transition: width 0.4s ease-in-out;
+}
+  
+.underline:hover::before {
+    width: 100%;
+}
+
+.navicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.github{
+    margin-right: 1.75rem;
+}
+.github, .linkedin{
+    text-decoration: none;
+    color: inherit;
+}
+
+.github:hover, .linkedin:hover{
+    transform: translateY(-4px);
+}
