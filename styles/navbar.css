@@ -5,13 +5,24 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
 header{
-    width: 100%; 
-    padding: 1rem 8rem; 
-    font-weight: 600;
+    width: 100%;
     display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
+    flex-direction: column;
+    font-weight: 600;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8rem;
 }
 
 .logo{
@@ -46,21 +57,16 @@ header{
     animation-iteration-count: infinite;
 }
 
-.navcenter{
-    position: absolute; 
-    left: 50%; /* move the element to the center horizontally */
-    transform: translateX(-50%); /* center the element horizontally using translateX */
+.menu{
+    display: flex;
+    align-items: center;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
+.menu li a{
     margin: 0 20px;
     font-size:large;
-}
-
-nav ul li a{
     color: black;
+    letter-spacing: 0.5px;
 }
 
 /* underline hover effect */
@@ -86,17 +92,17 @@ nav ul li a{
     width: 100%;
 }
 
-.navicon{
+.nav-social{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
+
 .github{
     margin-right: 1.75rem;
 }
+
 .github, .linkedin{
-    text-decoration: none;
     color: inherit;
 }
 
