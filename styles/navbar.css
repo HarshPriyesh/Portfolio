@@ -52,6 +52,7 @@ header{
 /* Apply the animation to the logo on hover */
 .logo:hover {
     animation-name: background-color-animation;
+    box-shadow: 0 0 10px #87209e;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -73,7 +74,6 @@ header{
 .underline {
     position: relative;
     display: inline-block;
-    color: #000;
     text-decoration: none;
   }
   
@@ -83,8 +83,8 @@ header{
     bottom: -3px; /* places the underline at the bottom of the text */
     left: 0; /* positions the underline at the left edge of the element */
     width: 0%; /* sets the initial width of the underline to zero */
-    height: 2px;
-    background-color: #000;
+    height: 3px;
+    background-color: #9c27b0;
     transition: width 0.4s ease-in-out;
 }
   
