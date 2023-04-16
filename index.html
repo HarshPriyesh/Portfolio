@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Priyesh - My Portfolio</title>
+    <title>Harsh Priyesh | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <header>
         <nav class="navigation">
             <a href="#" class="logo">hp.</a>
             <ul class="menu">
-                <li><a class="underline" href="#">Home</a></li>
-                <li><a class="underline" href="#">About</a></li>
-                <li><a class="underline" href="#">Projects</a></li>
-                <li><a class="underline" href="#">Contact</a></li>
+                <li><a class="underline" href="#"><i class='bx bx-home' style='color:#9c27b0'></i>Home</a></li>
+                <li><a class="underline" href="#"><i class='bx bx-user' style='color:#9c27b0'></i>About</a></li>
+                <li><a class="underline" href="#"><i class='bx bx-file' style='color:#9c27b0'></i>Projects</a></li>
+                <li><a class="underline" href="#"><i class='bx bx-message-detail' style='color:#9c27b0'></i>Contact</a></li>
             </ul>
             <div class="nav-social">
                 <a href='https://github.com/HarshPriyesh' target="_blank" class="github">
                     <i class='bx bxl-github bx-md'></i>
                 </a>
                 <a href='https://www.linkedin.com/' target="_blank" class="linkedin">
-                    <i class='bx bxl-linkedin-square bx-md' style='color:#1D2DC4'></i>
+                    <i class='bx bxl-linkedin-square bx-md'></i>
                 </a>
             </div>
         </nav>
@@ -34,14 +36,29 @@
         </div>          
         <div class="heading-container">
             <h1 class="heading">
-                Hello Everyone! 
-                <span class="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                Hi Everyone! 
+                <span class="wave" role="img" aria-labelledby="wave">👋</span>
             </h1>
             <h1 class="heading-name">
-                I'M
-                <strong class="my-name"> HARSH PRIYESH</strong>
+                My name is
+                <span class="my-name"> HARSH PRIYESH</span>
             </h1>
+            <h1 class="heading-text">
+                I'm a 
+                <span class="my-name type"></span>
+            </h1>
+            <div class="resume">
+                <a href="HarshPriyesh-Resume.pdf" download class="button click-effect">Download Resume</a>
+            </div>
         </div>
     </div>
+    <script>
+        var typed = new Typed('.type', {
+        strings: ["Web Developer", "Google Cloud Engineer", "Advance Excel User"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+        });
+    </script>
 </body>
 </html>

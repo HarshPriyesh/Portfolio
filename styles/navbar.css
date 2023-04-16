@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    background-color: #f3e5f5;
 }
 
 ul{
@@ -44,7 +45,7 @@ header{
     0% { background-color: #121212; }
     20% { background-color: rgba(131, 58, 180, 1); }
     40% { background-color: rgba(253, 29, 29, 1); }
-    60% { background-color: rgba(252, 176, 69, 1); }
+    60% { background-color: rgb(251, 148, 52); }
     80% { background-color: rgba(131, 58, 180, 1); }
     100% { background-color: #121212; }
 }
@@ -65,7 +66,7 @@ header{
 
 .menu li a{
     margin: 0 20px;
-    font-size:large;
+    font-size:larger;
     color: black;
     letter-spacing: 0.5px;
 }
@@ -100,12 +101,16 @@ header{
 
 .github{
     margin-right: 1.75rem;
+    color: black;
 }
-
+.linkedin{
+    color:#1D2DC4;
+}
 .github, .linkedin{
-    color: inherit;
+    transition: transform 0.3s;
 }
 
 .github:hover, .linkedin:hover{
     transform: translateY(-4px);
+    color: #9C27B0;
 }
