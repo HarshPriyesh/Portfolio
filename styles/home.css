@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
 } 
+
 img {
     max-width: 70%; /* set the maximum width of the image to 100% */
     max-height: auto; /* set the maximum height of the image to 100% */
