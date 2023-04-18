@@ -1,0 +1,122 @@
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 12px;
+}
+
+.purple {
+    color: #9c27b0;
+}
+
+.about-heading {
+    width: 100%;
+    display: flex;
+    padding-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-heading h1 {
+    font-size: 2.6em;
+}
+
+.about-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.about-description {
+    width: 50%;
+    margin-left: 70px;
+    margin-right: 12px;
+    font-size: 1.2em;
+    word-spacing: 0.2em;
+    font-weight: 600;
+}
+
+.about-face-eye {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* face shape */
+.face{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #464343;
+    background: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+/* smiley face expression*/
+.face::before{
+    content: '';
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s
+}
+/* on hover neutral face expression*/
+.face:hover::before{
+    top: 210px;
+    width: 150px;
+    height: 20px;
+    background: #b57700;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/* white eye shape */
+.eyes{
+    background-color: #ffcd00;
+    position: relative;
+    top: -40px;
+    display: flex
+}
+.eyes .eye{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 50%
+}
+/* black eye ball shape */
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%
+}
+
+.tab-titles{
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.tab-skills, .tab-edu, .tab-exp{
+    cursor: pointer;
+    position: relative;
+}
+.tab-skills, .tab-edu{
+    margin-right: 50px;
+}

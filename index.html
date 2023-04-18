@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +11,17 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
     <header>
         <nav class="navigation">
             <a href="#" class="logo">hp.</a>
             <ul class="menu">
-                <li><a class="underline" href="#"><i class='bx bx-home' style='color:#9c27b0'></i>Home</a></li>
-                <li><a class="underline" href="#"><i class='bx bx-user' style='color:#9c27b0'></i>About</a></li>
+                <li><a class="underline" href="#home"><i class='bx bx-home' style='color:#9c27b0'></i>Home</a></li>
+                <li><a class="underline" href="#about"><i class='bx bx-user' style='color:#9c27b0'></i>About</a></li>
                 <li><a class="underline" href="#"><i class='bx bx-file' style='color:#9c27b0'></i>Projects</a></li>
-                <li><a class="underline" href="#"><i class='bx bx-message-detail' style='color:#9c27b0'></i>Contact</a></li>
+                <li><a class="underline" href="#"><i class='bx bx-message-detail' style='color:#9c27b0'></i>Contact</a>
+                </li>
             </ul>
             <div class="nav-social">
                 <a href='https://github.com/HarshPriyesh' target="_blank" class="github">
@@ -30,13 +33,13 @@
             </div>
         </nav>
     </header>
-    <div class="main-body">
+    <div id="home">
         <div class="image-container">
             <img src="images/home_background.png" alt="your-image-description">
-        </div>          
+        </div>
         <div class="heading-container">
             <h1 class="heading">
-                Hi Everyone! 
+                Hi Everyone!
                 <span class="wave" role="img" aria-labelledby="wave">👋</span>
             </h1>
             <h1 class="heading-name">
@@ -44,21 +47,82 @@
                 <span class="my-name"> HARSH PRIYESH</span>
             </h1>
             <h1 class="heading-text">
-                I'm a 
+                I'm a
                 <span class="my-name type"></span>
             </h1>
             <div class="resume">
-                <a href="HarshPriyesh-Resume.pdf" download class="button click-effect">Download Resume</a>
+                <a href="HarshPriyesh-Resume.pdf" download class="button">Download Resume</a>
             </div>
         </div>
     </div>
+
+    <!-- About Section -->
+
+    <div id="about">
+        <div class="about-heading">
+            <h1>
+                LET ME
+                <span class="purple"> INTRODUCE </span>
+                MYSELF
+            </h1>
+        </div>
+        <div class="about-body">
+            <div class="about-description">
+                <p>
+                    Hello, I'm <span class="purple">Harsh Priyesh</span> from <span class="purple">Bihar,
+                    India</span>.<br />
+                    I am an electronics graduate from <span class="purple">NIT Srinagar</span> with a strong inclination
+                    towards programming and web development. I specialize in <span class="purple">web development</span>,
+                    have a solid foundation in <span class="purple">C++</span>, and have experience working with the <span
+                    class="purple">Google Cloud Platform</span>. I thrive in creative environments where I can apply my
+                    problem-solving skills and continuously learn new technologies.
+                </p>
+                <br />
+                <p>
+                    My technical expertise and eagerness to learn to make me a strong candidate for any position. I strive
+                    to create innovative solutions that can positively impact the world. Whether building an engaging user
+                    interface, designing a more efficient backend system or working on a cloud, I am excited about using
+                    technology to create meaningful change. <span class="purple">Let's start something unique together!</span>
+                </p>
+            </div>
+            <div class="about-face-eye">
+                <div class="face">
+                    <div class="eyes">
+                        <div class="eye"><div class="ball"></div></div>
+                        <div class="eye"><div class="ball"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-titles">
+            <h1 class="tab-skills">Skills</h1>
+            <h1 class="tab-edu">Education</h1>
+            <h1 class="tab-exp">Experience</h1>
+        </div>
+    </div>
+
     <script>
+        // typing effect script
         var typed = new Typed('.type', {
-        strings: ["Web Developer", "Google Cloud Engineer", "Advance Excel User"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true
+            strings: ["Web Developer", "Google Cloud Engineer", "Advance Excel User"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
         });
+
+        // eye ball movement script
+        document.querySelector("body").addEventListener("mousemove", eyeball);
+        function eyeball() {
+            var eye = document.querySelectorAll(".eye");
+            eye.forEach(function (eye) {
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = ((radian * 180 / Math.PI) * -1) + 270;
+                eye.style.transform  = "rotate("+ rot +"deg)";
+            })
+        }
     </script>
 </body>
+
 </html>
