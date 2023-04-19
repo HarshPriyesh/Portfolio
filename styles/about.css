@@ -12,21 +12,17 @@
 .about-heading {
     width: 100%;
     display: flex;
-    padding-bottom: 70px;
     justify-content: center;
     align-items: center;
 }
-
 .about-heading h1 {
     font-size: 2.6em;
 }
-
 .about-body {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 }
-
 .about-description {
     width: 50%;
     margin-left: 70px;
@@ -34,9 +30,11 @@
     font-size: 1.2em;
     word-spacing: 0.2em;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-.about-face-eye {
+.about-background {
     width: 50%;
     height: auto;
     display: flex;
@@ -44,79 +42,130 @@
     align-items: center;
 }
 
-/* face shape */
-.face{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #464343;
-    background: #ffcd00;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-/* smiley face expression*/
-.face::before{
-    content: '';
-    position: absolute;
-    top: 180px;
-    width: 150px;
-    height: 70px;
-    background: #b57700;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 70px;
-    transition: 0.5s
-}
-/* on hover neutral face expression*/
-.face:hover::before{
-    top: 210px;
-    width: 150px;
-    height: 20px;
-    background: #b57700;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-/* white eye shape */
-.eyes{
-    background-color: #ffcd00;
-    position: relative;
-    top: -40px;
-    display: flex
-}
-.eyes .eye{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    display: block;
-    background: #fff;
-    margin: 0 15px;
-    border-radius: 50%
-}
-/* black eye ball shape */
-.eyes .eye::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 25px;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    background: #000;
-    border-radius: 50%
-}
-
 .tab-titles{
     width: 100%;
     display: flex;
     margin-top: 70px;
+    margin-bottom: 50px;
     justify-content: center;
     align-items: center;
 }
-.tab-skills, .tab-edu, .tab-exp{
+.tab-links{
     cursor: pointer;
     position: relative;
 }
-.tab-skills, .tab-edu{
-    margin-right: 50px;
+.tab-titles h1:nth-child(1), .tab-titles h1:nth-child(2){
+    margin-right: 100px;
+ }
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents{
+    width: 100%;
+    height: auto;
+    display: none;
+    padding-top: 20px;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* skill section*/
+.skill-heading{
+    display: flex;
+    justify-content: center;
+}
+.skill-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 60px 20px 60px;
+}
+.skill-img {
+    width: 51px;
+    height: 51px;
+}
+.skill-text {
+    display: flex;
+    border: 1px solid #90117d;
+    border-radius: 14px;
+    box-shadow: 0 0 5px #a12dbc;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2%;
+    width: 200px;
+    padding-block: 10px;
+}
+.skill-text:hover {
+    transform: scale(1.2);
+}
+
+/* education section*/
+.edu-container{
+    display: flex;
+    justify-content: center;
+}
+.edu-image{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu-content{
+    padding: 0 30px;
+    border-left: 2px solid #bababa;
+    width: 50%;
+    height: auto;
+}
+.edu-box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.edu-box, .edu-box h4, .edu-box h3, .edu-box p{
+    background-color: #ffffff;
+}
+.edu-box:hover{
+    box-shadow: 0 10px 12px 0 #ccc;
+    border: 1px solid transparent;
+}
+.edu-box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #9c27b0;
+    border: 2px solid white;
+}
+.edu-box h4{
+    position: relative;
+    color: #9c27b0;
+}
+.edu-box h3{
+    font-size: 19px;
+    padding: 10px 0 6px;
+    font-family: Helvetica, sans-serif;
+    color: #444;
+}
+.edu-box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
 }
