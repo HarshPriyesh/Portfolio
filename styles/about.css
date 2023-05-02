@@ -182,6 +182,11 @@
     align-items: center;
     flex-direction: column;
 }
+.stats{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
 .total-exp{    
     display: flex;
     align-items: center;
@@ -193,6 +198,9 @@
     border-radius: 15px;
     border: 1px solid #eaeaea;
     box-shadow: 3px 3px 7px rgb(82, 79, 79);
+	width: 120px;
+    display: flex;
+    justify-content: center;
 }
 .total-exp h1:hover {
     transform: scale(1.1);
@@ -202,6 +210,8 @@
 }
 .total-exp h1, .total-exp h1 span{
     background-color: white;
+	display: flex;
+    align-items: baseline;
 }
 .total-exp h3{
     margin-top: 5px;
