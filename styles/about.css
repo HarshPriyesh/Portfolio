@@ -107,6 +107,7 @@
   margin: 2%;
   width: 200px;
   padding-block: 10px;
+  transition: all .4s ease 0s;
 }
 .skill-text,
 .skill-text img,
@@ -114,7 +115,7 @@
   background-color: white;
 }
 .skill-text:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* education section*/
@@ -207,6 +208,7 @@
   width: 120px;
   display: flex;
   justify-content: center;
+  transition: all .4s ease 0s;
 }
 .total-exp h1:hover {
   transform: scale(1.1);
@@ -247,7 +249,7 @@
   width: 70%;
 }
 .exp-card:hover {
-  box-shadow: 0 10px 12px 0 #a19f9f;
+  box-shadow: 0 10px 12px 0 #ccc;
 }
 .exp-content {
   width: 80%;

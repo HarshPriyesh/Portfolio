@@ -1,0 +1,93 @@
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 12px;
+}
+
+.projects-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects-heading h1 {
+  font-size: 2.6em;
+}
+
+.projects-heading h3 {
+  margin-top: 9px;
+}
+
+.project-list {
+  display: flex;
+  margin-top: 70px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.project-item {
+  border-radius: 17px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  padding: 15px 15px;
+  margin-right: 20px;
+  box-shadow: 0 10px 12px 0 #ccc;
+  background-color: white;
+  border-bottom: 8px solid #ff004f;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  color: white;
+  transition: height 0.5s;
+}
+.layer h3,
+.layer p,
+.layer a,
+.layer i,
+.project-image {
+  background: transparent;
+}
+.layer h3 {
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ff004f;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.project-item:hover .layer {
+  height: 100%;
+}
