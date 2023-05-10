@@ -1,10 +1,15 @@
 #contact {
   padding: 70px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .contact-left {
   display: flex;
@@ -16,51 +21,78 @@
   margin-bottom: 30px;
   text-align: center;
 }
-.contact-left p{
-    margin-bottom: 10px;
+.contact-left p {
+  margin-bottom: 10px;
 }
-.contact-left p i{
-    color: #9c27b0;
-    margin-right: 15px;
-    font-size: 22px;
-    transform: translateY(3px);
+.contact-left p i {
+  color: #9c27b0;
+  margin-right: 15px;
+  font-size: 22px;
+  transform: translateY(3px);
 }
 .social-icon {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.social-icon h4{
-    margin-bottom: 10px;
+.social-icon h4 {
+  margin-bottom: 10px;
 }
 
-.icons a{
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 15px;
-    color: #9c27b0;
-    font-size: 30px;
-    transition: transform 0.5s;
+.icons a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 15px;
+  color: #9c27b0;
+  font-size: 30px;
+  transition: transform 0.5s;
 }
-.icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
+.icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
 }
-.contact-resume{
-    margin-top: 50px;
-    text-align: center;
-    padding-left: 0;
+.contact-resume {
+  margin-top: 50px;
+  text-align: center;
+  padding-left: 0;
 }
-.contact-button{
-    border-radius: 10px;
+.contact-button {
+  border-radius: 10px;
 }
-.contact-button i{
-    background: transparent;
-    margin-right: 10px;
-    font-size: 20px;
-    transform: translateY(3px);
+.contact-button i {
+  background: transparent;
+  margin-right: 10px;
+  font-size: 20px;
+  transform: translateY(3px);
 }
-.contact-right{
-    flex-basis: 35%;
+.contact-right {
+  flex-basis: 35%;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .contact-button {
+  padding: 14px 40px;
+  background-color: #841f96;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+#contact img{
+  width: 35%;
+  height: auto;
 }
