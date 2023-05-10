@@ -107,7 +107,7 @@
   margin: 2%;
   width: 200px;
   padding-block: 10px;
-  transition: all .4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .skill-text,
 .skill-text img,
@@ -140,7 +140,6 @@
   position: relative;
   padding: 20px;
   border: 1px solid #eaeaea;
-  cursor: pointer;
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -208,7 +207,7 @@
   width: 120px;
   display: flex;
   justify-content: center;
-  transition: all .4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 .total-exp h1:hover {
   transform: scale(1.1);
@@ -242,7 +241,7 @@
 .exp-card {
   border-left: 5px solid #9c27b0;
   padding: 20px;
-  cursor: pointer;
+  /*cursor: pointer;*/
   border-radius: 10px;
   display: flex;
   flex-direction: row;

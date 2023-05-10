@@ -65,6 +65,7 @@
   text-align: center;
   color: white;
   transition: height 0.5s;
+  cursor: pointer;
 }
 .layer h3,
 .layer p,
