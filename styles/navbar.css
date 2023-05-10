@@ -83,15 +83,14 @@ header {
   align-items: center;
   background: transparent;
 }
-.menu li{
+.menu li {
   background: transparent;
 }
-.menu a{
+.menu a {
   background-color: white;
   padding: 5px 5px;
   border-radius: 10px;
   box-shadow: 0 10px 12px 0 #ccc;
-
 }
 .menu li a {
   margin: 0 20px;
@@ -99,7 +98,7 @@ header {
   color: black;
   letter-spacing: 0.5px;
 }
-.menu li a i{
+.menu li a i {
   background: transparent;
 }
 /* underline hover effect */
@@ -130,10 +129,10 @@ header {
   justify-content: center;
   background: transparent;
 }
-.nav-social a{
+.nav-social a {
   background: transparent;
 }
-.nav-social a i{
+.nav-social a i {
   background: transparent;
 }
 .github {

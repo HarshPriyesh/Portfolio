@@ -1,5 +1,5 @@
 #contact {
-  padding: 70px 12px;
+  padding: 70px 12px 70px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +92,7 @@ form .contact-button {
   color: white;
   border: none;
 }
-#contact img{
+#contact img {
   width: 35%;
   height: auto;
 }
