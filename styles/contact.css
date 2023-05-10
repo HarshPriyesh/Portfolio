@@ -1,0 +1,66 @@
+#contact {
+  padding: 70px 12px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+}
+.contact-left h1 {
+  font-size: xxx-large;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact-left p{
+    margin-bottom: 10px;
+}
+.contact-left p i{
+    color: #9c27b0;
+    margin-right: 15px;
+    font-size: 22px;
+    transform: translateY(3px);
+}
+.social-icon {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon h4{
+    margin-bottom: 10px;
+}
+
+.icons a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #9c27b0;
+    font-size: 30px;
+    transition: transform 0.5s;
+}
+.icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-resume{
+    margin-top: 50px;
+    text-align: center;
+    padding-left: 0;
+}
+.contact-button{
+    border-radius: 10px;
+}
+.contact-button i{
+    background: transparent;
+    margin-right: 10px;
+    font-size: 20px;
+    transform: translateY(3px);
+}
+.contact-right{
+    flex-basis: 35%;
+}

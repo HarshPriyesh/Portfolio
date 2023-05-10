@@ -93,16 +93,18 @@
       <div class="about-body">
         <div class="about-description">
           <p>
-            Hello, I'm <span class="purple">Harsh Priyesh</span> from
-            <span class="purple">Bihar, India</span>.<br />
-            I am an electronics graduate from
-            <span class="purple">NIT Srinagar</span> with a strong inclination
-            towards programming and web development. I specialize in
-            <span class="purple">web development</span>, have a solid foundation
-            in <span class="purple">C++</span>, and have experience working with
-            the <span class="purple">Google Cloud Platform</span>. I thrive in
-            creative environments where I can apply my problem-solving skills
-            and continuously learn new technologies.
+            Hello, my name is <span class="purple">Harsh Priyesh</span>, and I'm
+            from <span class="purple">Bihar, India</span>. I am an electronics
+            graduate from <span class="purple">NIT Srinagar</span> with
+            experience in the <span class="purple">Google Cloud Platform</span>.
+            I am keenly interested in programming,
+            <span class="purple">C++</span>, and
+            <span class="purple">web development</span>. When I'm not coding, I
+            enjoy expressing my creativity through hobbies such as painting and
+            playing music. I am always eager to learn and improve, both in my
+            personal and professional life. I thrive in creative environments
+            where I can apply my problem-solving skills and continuously learn
+            new technologies.
           </p>
           <br />
           <p>
@@ -358,7 +360,71 @@
       </div>
     </div>
 
+    <!-- Contact Section -->
+
+    <div id="contact">
+      <div class="row">
+        <div class="contact-left">
+          <h1><span class="purple">CONTACT</span> ME</h1>
+          <p><i class="bx bx-current-location"></i>India, Hyderabad</p>
+          <p><i class="bx bxs-envelope"></i>harsh.priyesh07@gmail.com</p>
+          <p><i class="bx bxs-phone"></i>(+91)8680882293</p>
+          <p><i class="bx bxl-whatsapp"></i>8680882293</p>
+          <div class="social-icon">
+            <h2>FIND ME ON</h2>
+            <h4>Feel free to <span class="purple">connect</span> with me</h4>
+            <div class="icons">
+              <a href="https://github.com/HarshPriyesh" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="resume contact-resume">
+            <a
+              href="HarshPriyesh-Resume.pdf"
+              download
+              class="button contact-button"
+              ><i class="bx bxs-down-arrow-circle"></i>Resume</a
+            >
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script>
+      //Navbasr scroll effect
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.querySelector(".navigation").style.top = "0";
+        } else {
+          document.querySelector(".navigation").style.top =
+            "-100px"; /* adjust to account for navbar height */
+        }
+        prevScrollpos = currentScrollPos;
+      };
+
       // typing effect script
       var typed = new Typed(".type", {
         strings: [

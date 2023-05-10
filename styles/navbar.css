@@ -20,10 +20,17 @@ header {
   font-weight: 600;
 }
 .navigation {
+  position: fixed;
+  transition: top 0.3s;
+  z-index: 9999;
+  background-color: rgba(243, 229, 245, 0.9);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 0rem 8rem;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .logo {
@@ -74,15 +81,27 @@ header {
 .menu {
   display: flex;
   align-items: center;
+  background: transparent;
 }
+.menu li{
+  background: transparent;
+}
+.menu a{
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+  box-shadow: 0 10px 12px 0 #ccc;
 
+}
 .menu li a {
   margin: 0 20px;
   font-size: larger;
   color: black;
   letter-spacing: 0.5px;
 }
-
+.menu li a i{
+  background: transparent;
+}
 /* underline hover effect */
 .underline {
   position: relative;
@@ -97,7 +116,7 @@ header {
   left: 0; /* positions the underline at the left edge of the element */
   width: 0%; /* sets the initial width of the underline to zero */
   height: 3px;
-  background-color: #9c27b0;
+  background-color: #ff004f;
   transition: width 0.4s ease-in-out;
 }
 
@@ -109,8 +128,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }
-
+.nav-social a{
+  background: transparent;
+}
+.nav-social a i{
+  background: transparent;
+}
 .github {
   margin-right: 1.75rem;
   color: black;
