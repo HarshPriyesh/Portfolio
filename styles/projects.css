@@ -70,8 +70,23 @@
 .layer p,
 .layer a,
 .layer i,
-.project-image {
+.project-image,
+.project-image h3,
+.project-image p {
   background: transparent;
+}
+.project-image {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.project-image img {
+  max-width: none;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 12px 0 #ab5fb89a;
 }
 .layer h3 {
   margin-bottom: 20px;
