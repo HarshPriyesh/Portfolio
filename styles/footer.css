@@ -1,7 +1,7 @@
 footer {
   position: relative;
   background: #e235ff;
-  min-height: 100px;
+  min-height: 60px;
 }
 footer .waves {
   position: absolute;
@@ -56,4 +56,23 @@ footer .waves {
   100% {
     background-positon-x: 0px;
   }
+}
+
+.copyright {
+  font-weight: bold;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright .icons a,
+.storyset {
+  color: black;
+}
+.storyset {
+  font-weight: normal;
+}
+.copyright .icons a:hover {
+  color: white;
 }
