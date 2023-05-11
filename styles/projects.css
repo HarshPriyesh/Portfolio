@@ -68,15 +68,7 @@
   transition: height 0.5s;
   cursor: pointer;
 }
-.layer h3,
-.layer p,
-.layer a,
-.layer i,
-.project-image,
-.project-image h3,
-.project-image p {
-  background: transparent;
-}
+
 .project-image {
   height: 100%;
   display: flex;

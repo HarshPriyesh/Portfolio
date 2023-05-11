@@ -80,10 +80,6 @@ header {
 .menu {
   display: flex;
   align-items: center;
-  background: transparent;
-}
-.menu li {
-  background: transparent;
 }
 .menu a {
   background-color: white;
@@ -96,9 +92,6 @@ header {
   font-size: larger;
   color: black;
   letter-spacing: 0.5px;
-}
-.menu li a i {
-  background: transparent;
 }
 /* underline hover effect */
 .underline {
@@ -126,13 +119,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-}
-.nav-social a {
-  background: transparent;
-}
-.nav-social a i {
-  background: transparent;
 }
 .github {
   margin-right: 1.75rem;

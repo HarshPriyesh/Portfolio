@@ -6,10 +6,6 @@
   background-color: #f3e5f5;
 }
 
-.purple {
-  color: #9c27b0;
-}
-
 .about-heading {
   width: 100%;
   display: flex;
@@ -110,9 +106,7 @@
   padding-block: 10px;
   transition: all 0.4s ease 0s;
 }
-.skill-text,
-.skill-text img,
-.skill-text p {
+.skill-text {
   background-color: white;
 }
 .skill-text:hover {
@@ -144,10 +138,7 @@
   margin-bottom: 20px;
   border-radius: 10px;
 }
-.edu-box,
-.edu-box h4,
-.edu-box h3,
-.edu-box p {
+.edu-box{
   background-color: #ffffff;
 }
 .edu-box:hover {
@@ -229,14 +220,7 @@
   margin-bottom: 30px;
 }
 
-.exp-card,
-.exp-card h3,
-.exp-card h4,
-.exp-card p,
-.exp-card span,
-.exp-content,
-.exp-logo,
-.exp-card img {
+.exp-card{
   background-color: white;
 }
 .exp-card {
