@@ -92,7 +92,7 @@ form .contact-button {
   color: white;
   border: none;
 }
-.contact-button:hover{
+form .contact-button:hover{
   background: linear-gradient(rgba(132, 31, 150, 0.6), #ff004f);
 }
 #contact img {

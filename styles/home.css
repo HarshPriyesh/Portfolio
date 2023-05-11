@@ -98,3 +98,40 @@ img {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+/* CSS for Small Screen*/
+@media only screen and (max-width: 600px) {
+  .home {
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+  .heading-container {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .heading {
+    font-size: 26px;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .heading-name {
+    font-size: 28px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .heading-text {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .resume {
+    padding-left: 0;
+    margin-top: 10px
+  }
+  .button {
+    padding: 8px 12px;
+}
+}
