@@ -87,7 +87,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 60px 20px 60px;
+  margin: 20px 60px;
 }
 .skill-img {
   width: 51px;
@@ -138,7 +138,7 @@
   margin-bottom: 20px;
   border-radius: 10px;
 }
-.edu-box{
+.edu-box {
   background-color: #ffffff;
 }
 .edu-box:hover {
@@ -220,7 +220,7 @@
   margin-bottom: 30px;
 }
 
-.exp-card{
+.exp-card {
   background-color: white;
 }
 .exp-card {
@@ -263,4 +263,122 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* CSS for Small Screen*/
+@media only screen and (max-width: 600px) {
+  #about {
+    padding: 70px 10px;
+  }
+  .about-heading h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .about-body {
+    flex-direction: column;
+  }
+  .about-description {
+    width: 100%;
+    margin: 0 10px;
+    font-size: 16px;
+    padding-right: 30px;
+  }
+  .about-background {
+    width: 100%;
+  }
+  img {
+    max-width: 80%;
+  }
+  .tab-titles {
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+  .tab-links {
+    font-size: larger;
+  }
+  .tab-titles h1:nth-child(1),
+  .tab-titles h1:nth-child(2) {
+    margin-right: 25px;
+  }
+  .skill-heading {
+    font-size: 15px;
+  }
+  .skill-flex {
+    margin: 20px 20px;
+  }
+  .skill-text {
+    width: 135px;
+    padding-block: 6px;
+    justify-content: space-evenly;
+  }
+  .skill-text p{
+    font-size: 12px;
+  }
+  .skill-img {
+    width: 35px;
+    height: 35px;
+  }
+  .edu-container {
+    flex-direction: column-reverse;
+  }
+  .edu-content {
+    width: 100%;
+  }
+  .edu-box p {
+    font-size: 13px;
+  }
+  .edu-box h3 {
+    font-size: 16px;
+  }
+  .edu-box h4 {
+    font-size: 14px;
+  }
+  .edu-image {
+    width: 100%;
+  }
+  .stats {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .total-exp h1 {
+    font-size: 25px;
+    padding: 8px;
+    width: 100px;
+  }
+  .total-exp h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .exp-card {
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column-reverse;
+    width: 90%;
+    align-items: center;
+  }
+  .exp-content {
+    width: 100%;
+    padding: 0 5px;
+    margin-top: 15px;
+  }
+  .exp-logo {
+    width: 25%;
+  }
+  .exp-content h3{
+    font-size: 16px;
+    text-align: center;
+  }
+  .exp-content h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .exp-content p {
+    font-size: 14px
+  }
+  .exp-image {
+    width: 100%;
+  }
+  .tab-contents#experience{
+    width: 95%;
+  }
 }
