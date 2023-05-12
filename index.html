@@ -65,16 +65,24 @@
           ></i>
           <ul class="mobile-menu-list">
             <li>
-              <a href="#home"><i class="bx bx-home"></i>Home</a>
+              <a href="#home" onclick="closeMenu()"
+                ><i class="bx bx-home"></i>Home</a
+              >
             </li>
             <li>
-              <a href="#about"><i class="bx bx-user"></i>About</a>
+              <a href="#about" onclick="closeMenu()"
+                ><i class="bx bx-user"></i>About</a
+              >
             </li>
             <li>
-              <a href="#projects"><i class="bx bx-file"></i>Projects</a>
+              <a href="#projects" onclick="closeMenu()"
+                ><i class="bx bx-file"></i>Projects</a
+              >
             </li>
             <li>
-              <a href="#contact"><i class="bx bx-message-detail"></i>Contact</a>
+              <a href="#contact" onclick="closeMenu()"
+                ><i class="bx bx-message-detail"></i>Contact</a
+              >
             </li>
           </ul>
           <div class="mobile-menu-social">
@@ -496,11 +504,11 @@
       var sidemenu = document.getElementById("sidemenu");
       var openmenu = document.getElementById("openmenu");
 
-      function openMenu(){
+      function openMenu() {
         sidemenu.style.right = "0";
         openmenu.style.display = "none";
       }
-      function closeMenu(){
+      function closeMenu() {
         sidemenu.style.right = "-180px";
         openmenu.style.display = "block";
       }

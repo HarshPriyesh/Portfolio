@@ -188,7 +188,7 @@ header {
   .mobile-menu i {
     color: white;
   }
-  .mobile-menu-list{
+  .mobile-menu-list {
     margin-top: 20px;
     font-size: 25px;
     margin-bottom: 50px;
@@ -196,7 +196,7 @@ header {
   .mobile-menu-list li {
     margin-top: 25px;
   }
-  .mobile-menu-social{
+  .mobile-menu-social {
     margin-bottom: 25px;
   }
 }
