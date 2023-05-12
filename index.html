@@ -53,8 +53,44 @@
             <i class="bx bxl-linkedin-square bx-md"></i>
           </a>
         </div>
+
+        <!-- Mobile Menu -->
+
+        <i id="openmenu" class="bx bx-menu bx-md" onclick="openMenu()"></i>
+        <div id="sidemenu" class="mobile-menu">
+          <i
+            class="bx bx-x bx-lg"
+            style="color: white"
+            onclick="closeMenu()"
+          ></i>
+          <ul class="mobile-menu-list">
+            <li>
+              <a href="#home"><i class="bx bx-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="bx bx-user"></i>About</a>
+            </li>
+            <li>
+              <a href="#projects"><i class="bx bx-file"></i>Projects</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="bx bx-message-detail"></i>Contact</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-social">
+            <a href="https://github.com/HarshPriyesh" target="_blank">
+              <i class="bx bxl-github bx-md"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="bx bxl-linkedin-square bx-md"></i>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <!-- home section -->
+
     <div class="home">
       <div class="image-container">
         <img src="images/home-background.svg" alt="your-image-description" />
@@ -456,13 +492,26 @@
         prevScrollpos = currentScrollPos;
       };
 
+      //Mobile Navbar close and open effect
+      var sidemenu = document.getElementById("sidemenu");
+      var openmenu = document.getElementById("openmenu");
+
+      function openMenu(){
+        sidemenu.style.right = "0";
+        openmenu.style.display = "none";
+      }
+      function closeMenu(){
+        sidemenu.style.right = "-180px";
+        openmenu.style.display = "block";
+      }
+
       // typing effect script
       var typed = new Typed(".type", {
         strings: [
           "Google Cloud Engineer",
           "Data Engineer",
           "Advance Excel User",
-          "Web Developer"
+          "Web Developer",
         ],
         typeSpeed: 100,
         backSpeed: 100,

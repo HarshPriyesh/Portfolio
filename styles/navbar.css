@@ -125,7 +125,7 @@ header {
   color: black;
 }
 .linkedin {
-  color: #1d2dc4;
+  color: #0077b5;
 }
 .github,
 .linkedin {
@@ -136,4 +136,67 @@ header {
 .linkedin:hover {
   transform: translateY(-4px);
   color: #9c27b0;
+}
+
+.navigation .bx-menu,
+.navigation .bx-x,
+.mobile-menu {
+  display: none;
+}
+
+/* CSS for Small Screen*/
+@media only screen and (max-width: 600px) {
+  .navigation .bx-menu,
+  .navigation .bx-x,
+  .mobile-menu {
+    display: block;
+  }
+  .navigation .bx-menu {
+    color: #87209e;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  .menu,
+  .nav-social {
+    display: none;
+  }
+  .navigation {
+    padding: 0 1rem;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -180px;
+    width: 180px;
+    height: 100vh;
+    background-color: #9c27b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  .mobile-menu .bx-x {
+    margin-top: 20px;
+  }
+  .mobile-menu a,
+  .mobile-menu i {
+    color: white;
+  }
+  .mobile-menu-list{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .mobile-menu-list li {
+    margin-top: 25px;
+  }
+  .mobile-menu-social{
+    margin-bottom: 25px;
+  }
 }
