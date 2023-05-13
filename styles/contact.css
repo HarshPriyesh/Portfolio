@@ -44,11 +44,16 @@
 .icons a {
   display: inline-block;
   text-decoration: none;
-  margin-right: 15px;
   color: #9c27b0;
   font-size: 30px;
   transition: transform 0.5s;
 }
+
+.icons a:nth-child(1),
+.icons a:nth-child(2) {
+  margin-right: 15px;
+}
+
 .icons a:hover {
   color: #ff004f;
   transform: translateY(-5px);
@@ -92,10 +97,54 @@ form .contact-button {
   color: white;
   border: none;
 }
-form .contact-button:hover{
+form .contact-button:hover {
   background: linear-gradient(rgba(132, 31, 150, 0.6), #ff004f);
 }
 #contact img {
   width: 35%;
   height: auto;
+}
+
+/* CSS for Small Screen*/
+@media only screen and (max-width: 600px) {
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .contact-resume {
+    margin-top: 20px;
+  }
+  #contact img {
+    width: 100%;
+  }
+  .contact-right {
+    margin-top: 30px;
+  }
+  #contact {
+    padding-top: 30px;
+  }
+  .contact-left h1 {
+    font-size: 40px;
+  }
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+  form .contact-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  footer {
+    height: 190px;
+  }
+  footer .copyright {
+    flex-direction: column;
+    height: inherit;
+  }
+  footer .copyright div {
+    text-align: center;
+  }
 }
