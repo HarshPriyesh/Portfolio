@@ -89,6 +89,9 @@ header {
   border-radius: 10px;
   box-shadow: 0 10px 12px 0 #ccc;
 }
+.navigation ul li i{
+  transform: translateY(1px);
+}
 .menu li a {
   margin: 0 20px;
   font-size: larger;
@@ -157,6 +160,9 @@ header {
     color: #87209e;
     margin-right: 30px;
     margin-top: 10px;
+  }
+  .mobile-menu ul li i{
+    margin-right: 5px;
   }
   .menu,
   .nav-social {
