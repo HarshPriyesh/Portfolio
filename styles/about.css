@@ -268,7 +268,7 @@
 /* CSS for Small Screen*/
 @media only screen and (max-width: 600px) {
   #about {
-    padding: 70px 10px;
+    padding: 50px 10px;
   }
   .about-heading h1 {
     font-size: 1.8em;
@@ -311,7 +311,7 @@
     padding-block: 6px;
     justify-content: space-evenly;
   }
-  .skill-text p{
+  .skill-text p {
     font-size: 12px;
   }
   .skill-img {
@@ -364,7 +364,7 @@
   .exp-logo {
     width: 25%;
   }
-  .exp-content h3{
+  .exp-content h3 {
     font-size: 16px;
     text-align: center;
   }
@@ -373,12 +373,12 @@
     text-align: center;
   }
   .exp-content p {
-    font-size: 14px
+    font-size: 14px;
   }
   .exp-image {
     width: 100%;
   }
-  .tab-contents#experience{
+  .tab-contents#experience {
     width: 100%;
   }
 }
