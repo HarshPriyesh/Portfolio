@@ -172,6 +172,10 @@
   font-size: 17px;
 }
 
+.edu-box p i, .exp-content p i {
+  font-size: x-small;
+  color: #9c27b0;
+}
 /* Experience Section */
 .exp-container {
   width: 100%;
