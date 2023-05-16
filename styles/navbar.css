@@ -46,6 +46,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  font-family: "Dancing Script", cursive;
 }
 
 /* Define the animation keyframes */
