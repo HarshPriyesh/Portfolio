@@ -74,6 +74,9 @@ img {
 .purple {
   color: #9c27b0;
 }
+.my-name{
+  font-family: 'Dancing Script', cursive;
+}
 .heading-text {
   padding: 50px;
 }
