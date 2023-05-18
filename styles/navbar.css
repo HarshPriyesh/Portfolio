@@ -90,7 +90,7 @@ header {
   border-radius: 10px;
   box-shadow: 0 10px 12px 0 #ccc;
 }
-.navigation ul li i{
+.navigation ul li i {
   transform: translateY(1px);
 }
 .menu li a {
@@ -162,7 +162,7 @@ header {
     margin-right: 30px;
     margin-top: 10px;
   }
-  .mobile-menu ul li i{
+  .mobile-menu ul li i {
     margin-right: 5px;
   }
   .menu,
@@ -179,10 +179,11 @@ header {
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: -180px;
-    width: 180px;
+    right: -150px;
+    width: 150px;
     height: 100vh;
-    background-color: #9c27b0;
+    background-color: rgb(156, 39, 176, 0.75);
+    box-shadow: -5px -1px 10px 1px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;

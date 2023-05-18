@@ -85,7 +85,15 @@
 .layer h3 {
   margin-bottom: 20px;
 }
+.layer .external-link {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
 .layer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   text-decoration: none;
   color: #ff004f;
@@ -99,6 +107,7 @@
 
 .project-item:hover .layer {
   height: 100%;
+  cursor: default;
 }
 
 /* CSS for Small Screen*/
