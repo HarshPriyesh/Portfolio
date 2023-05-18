@@ -179,7 +179,7 @@ header {
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: -150px;
+    right: -160px;
     width: 150px;
     height: 100vh;
     background-color: rgb(156, 39, 176, 0.75);
