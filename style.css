@@ -1,7 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap");
 @import url("styles/navbar.css");
 @import url("styles/home.css");
 @import url("styles/about.css");
 @import url("styles/projects.css");
 @import url("styles/contact.css");
 @import url("styles/footer.css");
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(to top, #e235ff, transparent);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #e235ff, transparent);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9c27b0
+}
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(to top, #ff004f, #ab6e13);
+}
