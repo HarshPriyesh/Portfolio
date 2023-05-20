@@ -24,7 +24,8 @@ header {
   position: fixed;
   transition: top 0.3s;
   z-index: 9999;
-  background-color: rgba(243, 229, 245, 0.9);
+  background-color: rgba(243, 229, 245, 0.1);
+  backdrop-filter: blur(5px);
   width: 100%;
   display: flex;
   justify-content: space-between;

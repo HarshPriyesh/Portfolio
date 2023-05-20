@@ -3,7 +3,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: #f3e5f5;
+  /* background-color: #f3e5f5; */
+  background: radial-gradient(ellipse at bottom, #e69ff2 0%, #f3e5f5 70%);
 }
 
 .image-container {

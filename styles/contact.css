@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f3e5f5;
+  /* background-color: #f3e5f5; */
+  background: radial-gradient(ellipse at top, #ffc0d4 0%, #f3e5f5 70%);
 }
 .row {
   display: flex;
@@ -101,7 +102,7 @@ form .contact-button {
 form .contact-button:hover {
   background: linear-gradient(rgba(132, 31, 150, 0.6), #ff004f);
 }
-#msg{
+#msg {
   color: green;
   font-weight: bold;
 }
@@ -144,7 +145,7 @@ form .contact-button:hover {
     padding: 10px 25px;
     font-size: 14px;
   }
-  #msg{
+  #msg {
     font-size: 14px;
   }
   footer {

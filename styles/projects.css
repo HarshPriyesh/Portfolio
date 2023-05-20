@@ -4,6 +4,7 @@
   flex-direction: column;
   padding: 70px 12px;
   background-color: #f3e5f5;
+  background: radial-gradient(ellipse at bottom, #ffc0d4 0%, #f3e5f5 70%);
 }
 
 .projects-heading {
