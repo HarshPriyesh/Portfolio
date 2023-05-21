@@ -4,6 +4,37 @@
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
+
+/* fade-in and slide-in from left and right css animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 750ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,7 +54,7 @@ header {
 .navigation {
   position: fixed;
   transition: top 0.3s;
-  z-index: 9999;
+  z-index: 1;
   background-color: rgba(243, 229, 245, 0.1);
   backdrop-filter: blur(5px);
   width: 100%;
