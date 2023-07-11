@@ -1,0 +1,60 @@
+#certification {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 12px;
+  background: #f3e5f5;
+  overflow-x: hidden;
+}
+
+.certificate-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
+}
+
+.certificate-container .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.certificate-container .gallery img {
+  max-width: 100%;
+  border: 10px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.315);
+  transition: 0.2s linear;
+}
+.certificate-container .gallery img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.achievement-container {
+  display: flex;
+  flex-direction: row;
+}
+.appreciation-letter {
+  margin-top: 50px;
+  margin-left: 8%;
+}
+.appreciation-letter img {
+  max-width: 100%;
+  border: 10px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.315);
+  transition: 0.2s linear;
+}
+
+.appreciation-letter img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* CSS for Small Screen*/
+@media only screen and (max-width: 600px) {
+    .achievement-container {
+        flex-direction: column;
+      }
+      .appreciation-letter{
+        margin-left: 0px;
+      }
+}
