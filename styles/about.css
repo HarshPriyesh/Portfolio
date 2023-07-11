@@ -291,7 +291,7 @@
   display: none;
 }
 
-label{
+.exp-content label{
   display: none;
 }
 /* CSS for Small Screen*/
@@ -299,10 +299,10 @@ label{
   #about {
     padding: 50px 10px;
   }
-  label, .hide-content {
+  .exp-content label, .hide-content {
     display: none;
   }
-  label {
+  .exp-content label {
     display: inline-block;
     /* cursor: pointer; */
   }
@@ -314,7 +314,7 @@ label{
     margin-top: 12px;
     font-weight: bold;
   }
-  .ch{
+  .exp-content .ch{
     display: flex;
     justify-content: center;
   }
