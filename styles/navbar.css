@@ -211,8 +211,8 @@ header {
   .mobile-menu {
     position: fixed;
     top: 0;
-    right: -160px;
-    width: 150px;
+    right: -186px;
+    width: 176px;
     height: 100vh;
     background-color: rgb(156, 39, 176, 0.75);
     box-shadow: -5px -1px 10px 1px rgba(0, 0, 0, 0.5);
@@ -232,7 +232,7 @@ header {
   }
   .mobile-menu-list {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 50px;
   }
   .mobile-menu-list li {

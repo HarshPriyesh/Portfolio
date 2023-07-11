@@ -51,10 +51,10 @@
 
 /* CSS for Small Screen*/
 @media only screen and (max-width: 600px) {
-    .achievement-container {
-        flex-direction: column;
-      }
-      .appreciation-letter{
-        margin-left: 0px;
-      }
+  .achievement-container {
+    flex-direction: column;
+  }
+  .appreciation-letter {
+    margin-left: 0px;
+  }
 }
